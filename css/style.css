@@ -248,8 +248,13 @@ h3 {
   gap: 0.75rem;
 }
 
+.hero__inner > * {
+  min-width: 0;
+}
+
 .hero__media img {
-  width: min(320px, 70%);
+  width: 100%;
+  max-width: 320px;
   margin-inline: auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -471,7 +476,7 @@ code {
   }
 
   .hero__media img {
-    width: 100%;
+    max-width: none;
   }
 
   .about__grid {
