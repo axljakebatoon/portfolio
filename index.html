@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Axl Jake M. Batoon — student designer and aspiring web developer." />
+  <title>Axl Jake M. Batoon — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="nav__logo" href="#home">Axl Jake</a>
+
+      <button
+        class="nav__toggle"
+        id="nav-toggle"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section id="home" class="section hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Student Designer &amp; Aspiring Web Developer</p>
+          <h1>Axl Jake M. Batoon</h1>
+          <p class="hero__intro">
+            Hi, I'm Axl — I love turning ideas into clean, responsive websites. I'm
+            currently sharpening my HTML, CSS, and JavaScript skills while doing what
+            I enjoy most: designing and illustrating.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View my work</a>
+            <a class="btn btn--ghost" href="#contact">Contact me</a>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <img
+            src="images/profile.jpg"
+            alt="Portrait photo of Axl Jake M. Batoon"
+            width="600"
+            height="800"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section__title">About</h2>
+        <p class="section__lead">
+          A short, honest introduction to who I am and where I'm headed.
+        </p>
+        <div class="about__grid">
+          <p>
+            I'm a student learning the fundamentals of web development. I'm comfortable
+            writing the structure of a page with HTML and styling it with CSS, and I'm
+            steadily building up my JavaScript skills by practising on small projects.
+          </p>
+          <p>
+            Outside of code, I enjoy designing and illustrating — thinking about layout,
+            colour, and how something looks and feels. I like combining that eye for
+            design with clean, readable code to make simple, friendly web pages.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <p class="section__lead">
+          What I'm working with right now, and what I'm learning next.
+        </p>
+        <ul class="skills__grid">
+          <li class="skill-card">
+            <h3>Designing &amp; Illustrating</h3>
+            <p>Sketching ideas, choosing colour and typography, and creating simple illustrations and layouts.</p>
+          </li>
+          <li class="skill-card">
+            <h3>HTML</h3>
+            <p>Writing clean, semantic page structure with accessible, easy-to-read markup.</p>
+          </li>
+          <li class="skill-card">
+            <h3>CSS</h3>
+            <p>Building responsive, mobile-first layouts with flexbox, grid, and custom properties.</p>
+          </li>
+          <li class="skill-card">
+            <h3>JavaScript</h3>
+            <p>Adding interactivity like menus and smooth scrolling, and continuing to grow my fundamentals.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__lead">
+          A selection of my classwork and practice projects. More will be added as I
+          finish them.
+        </p>
+
+        <div class="projects__grid">
+          <article class="project-card">
+            <img src="images/shadow-switch-sceenshot.png" alt="ShadowSwitch web dashboard showing a selected machine and Shutdown, Restart, Lock, and Log Out controls" />
+            <div class="project-card__body">
+              <h3>ShadowSwitch — Remote Power Management</h3>
+              <p>
+                A lightweight remote-management utility for Windows PCs. A small Go agent
+                (<code>receiver.exe</code>) listens for commands over Firebase (cloud) or
+                directly over the local network, so a machine can be shut down, restarted,
+                locked, or logged out from a web dashboard.
+              </p>
+              <p class="project-card__role">
+                <strong>My contribution:</strong> Managed the project and created this based on my ideas.
+              </p>
+              <div class="project-card__links">
+                <a class="project-card__link" href="https://project-fuoj8.vercel.app" target="_blank" rel="noopener noreferrer">Live demo &rarr;</a>
+                <a class="project-card__link project-card__link--muted" href="https://github.com/Kevsssssss/shadow-switch" target="_blank" rel="noopener noreferrer">Source code &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/2-player-pvp.png" alt="Screenshot of the 2-Player PVP Arcade game showing the title menu and arena" />
+            <div class="project-card__body">
+              <h3>2-Player PVP Arcade — Local Multiplayer Game</h3>
+              <p>
+                A two-player arena battle game built on HTML5 Canvas. Player 1 controls
+                with the mouse (left click to attack); Player 2 uses WASD and the F key.
+                Players fight over health hearts and pick up power-ups — a sword, a
+                shield, speed boots, and bombs.
+              </p>
+              <p class="project-card__role">
+                <strong>My contribution:</strong> Solo developer
+              </p>
+              <div class="project-card__links">
+                <a class="project-card__link" href="projects/2-player-pvp/" target="_blank" rel="noopener noreferrer">Play the game &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="images/tastytutors.jpg" alt="TastyTutors recipe website homepage showing a purple kitchen and the site navigation" />
+            <div class="project-card__body">
+              <h3>TastyTutors — Recipe Tutorial Website</h3>
+              <p>
+                A multi-page recipe website for home cooks — a home page, a browsable food
+                gallery, an about page, and a contact page, plus six step-by-step recipe
+                pages. Built with HTML and CSS around a consistent purple theme.
+              </p>
+              <p class="project-card__role">
+                <strong>My contribution:</strong> Designed and built this project solo.
+              </p>
+              <div class="project-card__links">
+                <a class="project-card__link" href="projects/TastyTutors/home.html" target="_blank" rel="noopener noreferrer">Visit the site &rarr;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Contact</h2>
+        <p class="section__lead">
+          Feel free to reach out by email or connect with me on GitHub.
+        </p>
+        <ul class="contact__list">
+          <li>
+            <a href="mailto:thuglifeaxl258@gmail.com">thuglifeaxl258@gmail.com</a>
+          </li>
+          <li>
+            <a href="https://github.com/axljakebatoon" target="_blank" rel="noopener noreferrer">
+              github.com/axljakebatoon
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>&copy; <span id="year">2026</span> Axl Jake M. Batoon</p>
+      <p>Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

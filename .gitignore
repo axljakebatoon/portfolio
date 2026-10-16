@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets — never publish these
+.env
+.env.*
+*.local
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archives
+*.zip
+
+# Not part of the published website
+Website_Portfolio_Student_Guide.docx
+.opencode/
+AGENTS.md
+
+# TastyTutors dev artifacts (not website content)
+projects/TastyTutors/Total Lines.txt
+projects/TastyTutors/color pallete.jpg
